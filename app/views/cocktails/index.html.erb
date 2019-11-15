@@ -1,0 +1,19 @@
+<h1>Welcome to Mister Cocktail</h1>
+
+
+<div class="container">
+  <h1>All cocktails</h1>
+
+      <% @cocktails.each do |cocktail| %>
+      <ul>
+      <tr>
+        <td><%= cocktail.name %></td>
+        <td><%= link_to 'Show', cocktail, class: "btn btn-success" %></td>
+      </tr>
+      </ul>
+    <% end %>
+
+
+</div>
+
+<%= link_to "Add new cocktail", new_cocktail_path, class: "btn btn-success" %>
