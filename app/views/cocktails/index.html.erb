@@ -1,8 +1,9 @@
+<% content_for(:title, "All Cocktails") %>
 <h1>Welcome to Mister Cocktail</h1>
 
 
 <div class="container">
-  <h1>All cocktails</h1>
+  <h1>You have <%= @cocktails.count %> Cocktails</h1>
 
       <% @cocktails.each do |cocktail| %>
       <ul>
